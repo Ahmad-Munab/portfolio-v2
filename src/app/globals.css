@@ -84,3 +84,23 @@
     linear-gradient(to bottom, #a4a4a418 1px, transparent 1px);
   background-size: 26px 26px;
 }
+
+::-webkit-scrollbar {
+  width: 4px; /* width of the scrollbar */
+}
+
+/* Background of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #6073e4; /* color of the background */
+}
+
+/* Handle on the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #4bd985; /* color of the thumb */
+  border-radius: 0px; /* rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #22c55e; /* color of the thumb on hover */
+}

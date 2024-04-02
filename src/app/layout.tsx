@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 const font = Space_Grotesk({ subsets: ["latin"] });
 
@@ -17,8 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${font.className} w-sreen max-w-screen overflow-x-hidden h-max p-0 m-0 box-borde bg-black/95 bg-grid `}
+        className={`${font.className} w-sreen max-w-screen overflow-x-hidden h-max p-0 m-0 box-border bg-black/95 bg-grid `}
       >
+        <Toaster />
         {children}
       </body>
     </html>
