@@ -12,7 +12,7 @@ const Navbar = () => {
     <motion.div {...slideBottom} className="flex justify-between md:py-12 py-8">
       <Link
         href={"#"}
-        className="sm:text-2xl text-xl text-white font-bold underline underline-offset-8 decoration-green-500 -rotate-3"
+        className="sm:text-3xl text-2xl text-white font-bold underline underline-offset-8 decoration-green-500 -rotate-3"
       >
         Ahmad Munab 💻
       </Link>

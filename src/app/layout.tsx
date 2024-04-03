@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${font.className} w-sreen max-w-screen overflow-x-hidden h-max p-0 m-0 box-border bg-black/95 bg-grid `}
+        className={`${font.className} w-screen overflow-x-hidden h-max p-0 m-0 box-border bg-black/95 bg-grid `}
       >
         <Toaster />
         {children}

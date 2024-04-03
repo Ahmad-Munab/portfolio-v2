@@ -30,11 +30,11 @@ export default function ContactSection() {
         once: true,
       }}
     >
-      <h2 className="md:text-4xl text-3xl font-bold capitalize mb-8 text-center text-white">
+      <h2 className="md:text-5xl text-3xl font-bold capitalize mb-8 text-center text-white">
         Contact Me
       </h2>
 
-      <p className=" -mt-6 text-white/80">
+      <p className="text-lg -mt-6 text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:ahmadmunab22@gmail.com">
           ahmadmunab22@gmail.com

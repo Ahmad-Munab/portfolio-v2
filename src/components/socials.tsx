@@ -41,7 +41,7 @@ const Socials = () => {
           transition={{ duration: 0.7, delay: 0.1 * (index + 1) }}
           key={index}
           target="_blank"
-          className={`group bg-white w-8  h-8 p-1 rounded-lg  border-2 ${link.border}`}
+          className={`group bg-white w-10  h-10 p-1 rounded-lg  border-2 ${link.border}`}
           href={link.url}
         >
           {link.icon}
