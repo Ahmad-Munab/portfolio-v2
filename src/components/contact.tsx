@@ -10,7 +10,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { sendEmail } from "@/lib/send-email";
 import Link from "next/link";
 
-export default function ContactSection() {
+export default function Contact() {
   const { pending } = useFormStatus();
 
   return (
@@ -31,10 +31,10 @@ export default function ContactSection() {
       }}
     >
       <h2 className="md:text-5xl text-3xl font-bold capitalize mb-8 text-center text-white">
-        Contact Me
+        {"Let's get Connected!"}
       </h2>
 
-      <p className="text-lg -mt-6 text-white/80">
+      <p className="text-md -mt-6 text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:ahmadmunab22@gmail.com">
           ahmadmunab22@gmail.com

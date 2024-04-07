@@ -12,19 +12,18 @@ export const Hero = () => {
           initial={{ x: "-4vw", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.35, delay: 0.1 }}
-          className="md:text-7xl text-4xl text-white font-bold"
+          className="group md:text-7xl text-4xl text-white font-bold"
         >
-          Hello there 👋 <br />
+          Hello there{" "}
+          <span className="group-hover:rotate-[30deg] transition-all ease-in-out duration-150">
+            👋
+          </span>{" "}
+          <br />
           <div className=" underline underline-offset-8 decoration-green-500">
             <span>{"I'm"}</span>
-            <motion.span
-              initial={{ x: "4rem", opacity: 0.2 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 0.5 }}
-              className="ps-3 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-indigo-500 "
-            >
+            <span className="ps-3 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-indigo-500 ">
               Ahmad Munab.
-            </motion.span>
+            </span>
           </div>
         </motion.h1>
         <motion.p
