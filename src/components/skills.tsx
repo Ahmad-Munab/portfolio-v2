@@ -1,23 +1,23 @@
 "use client";
 
 import {
-  SiFirebase,
+  SiDocker,
+  SiGit,
+  SiGo,
+  SiMysql,
   SiNextdotjs,
   SiNodedotjs,
-  SiNuxtdotjs,
   SiPrisma,
   SiReact,
-  SiSupabase,
   SiTailwindcss,
-  SiVuedotjs,
 } from "react-icons/si";
 import Title from "./ui/title";
 import { AnimatedCards } from "./ui/animated-card";
 
 const skills = [
   {
-    text: "Node.js",
-    icon: SiNodedotjs,
+    text: "Next.js",
+    icon: SiNextdotjs,
   },
   {
     text: "Tailwind CSS",
@@ -28,28 +28,28 @@ const skills = [
     icon: SiReact,
   },
   {
-    text: "Next.js",
-    icon: SiNextdotjs,
+    text: "Node.js",
+    icon: SiNodedotjs,
   },
   {
-    text: "Vue.js",
-    icon: SiVuedotjs,
+    text: "Docker",
+    icon: SiDocker,
   },
   {
-    text: "Nuxt.js",
-    icon: SiNuxtdotjs,
-  },
-  {
-    text: "Supabase",
-    icon: SiSupabase,
-  },
-  {
-    text: "Firebase",
-    icon: SiFirebase,
+    text: "Git",
+    icon: SiGit,
   },
   {
     text: "Prisma",
     icon: SiPrisma,
+  },
+  {
+    text: "MySQl",
+    icon: SiMysql,
+  },
+  {
+    text: "GoLang",
+    icon: SiGo,
   },
 ];
 
