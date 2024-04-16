@@ -36,12 +36,12 @@ export default function Title({
       }}
     >
       <h1
-        className={`text-3xl font-bold text-white group-hover:text-green-500 transition-all duration-300`}
+        className={`md:text-4xl text-3xl font-bold text-white group-hover:text-green-500 transition-all duration-300`}
       >
         {text}
       </h1>
-      <div className="w-40 h-1.5 mt-[1px] rounded-full bg-green-500"></div>
-      <div className="w-40 h-1.5 rounded-full bg-indigo-500 translate-x-3"></div>
+      <div className="w-48 h-2 mt-[1px] rounded-full bg-green-500"></div>
+      <div className="w-48 h-2 rounded-full bg-indigo-500 translate-x-3"></div>
     </motion.div>
   );
 }
