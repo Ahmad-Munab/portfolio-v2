@@ -5,6 +5,20 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { IconType } from "react-icons";
 
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.07 * index,
+    },
+  }),
+};
+
 export const AnimatedCards = ({
   items,
   className,
@@ -25,11 +39,18 @@ export const AnimatedCards = ({
       )}
     >
       {items.map((item, idx) => (
-        <div
+        <motion.div
           key={idx}
           className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
+          variants={fadeInAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          custom={idx}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
@@ -48,7 +69,7 @@ export const AnimatedCards = ({
               />
             )}
           </AnimatePresence>
-          <div className="rounded-md w-full p-4 overflow-hidden bg-black  border group-hover:ring-2 ring-green-500 relative z-20 transition-all duration-500">
+          <div className="rounded-md w-full p-4 overflow-hidden bg-black group-hover:ring-2 ring-green-500 relative z-20 transition-all duration-500">
             <div className="py-10 z-50 relative space-y-5">
               <item.icon className="mx-auto size-8 text-white" />
               <p className="text-2xl font-semibold text-center text-gray-300">
@@ -56,7 +77,7 @@ export const AnimatedCards = ({
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );

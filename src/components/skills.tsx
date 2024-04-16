@@ -56,10 +56,7 @@ const skills = [
 export default function Skills() {
   return (
     <div className="md:w-8/12 w-10/12 flex flex-col md:py-24 py-16">
-      <Title
-        text="Skills 💪"
-        className="flex flex-col items-center justify-center mb-5"
-      />
+      <Title text="Skills 💪" />
       <AnimatedCards items={skills} />
     </div>
   );

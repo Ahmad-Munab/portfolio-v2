@@ -9,6 +9,7 @@ import { useFormStatus } from "react-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { sendEmail } from "@/lib/send-email";
 import Link from "next/link";
+import Title from "./ui/title";
 
 export default function Contact() {
   const { pending } = useFormStatus();
@@ -31,16 +32,8 @@ export default function Contact() {
       }}
     >
       <h2 className="md:text-5xl text-3xl font-bold capitalize mb-8 text-center text-white">
-        {"Let's get Connected!"}
+        <Title text="Let's get Connected!" />
       </h2>
-
-      <p className="text-md -mt-6 text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:ahmadmunab22@gmail.com">
-          ahmadmunab22@gmail.com
-        </a>{" "}
-        <br /> or via call +8801968450105 or through this form.
-      </p>
 
       <form
         className="mt-10 flex flex-col text-white"
@@ -74,9 +67,9 @@ export default function Contact() {
           <Link
             href="https://linkedin.com/in/ahmad-munab"
             target="_blank"
-            className="group cursor-pointer flex sm:flex-row flex-col justify-center items-center gap-2 text-white/90 bg-opacity-10 p-3 rounded-lg border-white border-2 transition-all focus:scale-105 hover:scale-105 bg-gray-700 active:scale-105 hover:border-indigo-500"
+            className="group w-max cursor-pointer flex  justify-center items-center gap-2 text-white/90 bg-opacity-10 p-3 rounded-lg border-white border-2 transition-all focus:scale-105 hover:scale-105 bg-gray-700 active:scale-105 hover:border-indigo-500"
           >
-            <span>Or message me in </span>
+            {/* <span>Message on</span> */}
 
             <span className=" group-hover:underline flex gap-2 cursor-pointer text-white/90">
               Linked In
