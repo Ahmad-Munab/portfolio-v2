@@ -4,12 +4,15 @@ import {
   SiDocker,
   SiGit,
   SiGo,
+  SiMongodb,
   SiMysql,
   SiNextdotjs,
   SiNodedotjs,
   SiPrisma,
+  SiPython,
   SiReact,
   SiTailwindcss,
+  SiTypescript,
 } from "react-icons/si";
 import Title from "./ui/title";
 import { AnimatedCards } from "./ui/animated-card";
@@ -48,6 +51,18 @@ const skills = [
     icon: SiMysql,
   },
   {
+    text: "MongoDB",
+    icon: SiMongodb,
+  },
+  {
+    text: "TypeScript",
+    icon: SiTypescript,
+  },
+  {
+    text: "Python",
+    icon: SiPython,
+  },
+  {
     text: "GoLang",
     icon: SiGo,
   },
@@ -55,8 +70,8 @@ const skills = [
 
 export default function Skills() {
   return (
-    <div className="md:w-8/12 w-10/12 flex flex-col md:py-24 py-16">
-      <Title text="Skills 💪" />
+    <div className="w-full flex flex-col md:py-24 py-16">
+      <Title text="Skills ⚡" />
       <AnimatedCards items={skills} />
     </div>
   );

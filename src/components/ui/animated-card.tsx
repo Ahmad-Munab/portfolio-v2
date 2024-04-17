@@ -14,7 +14,7 @@ const fadeInAnimationVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.07 * index,
+      delay: 0.05 * index,
     },
   }),
 };
@@ -34,7 +34,7 @@ export const AnimatedCards = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10 cursor-pointer",
+        "grid grid-cols-2   lg:grid-cols-4  py-10 cursor-pointer",
         className
       )}
     >

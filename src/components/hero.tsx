@@ -33,7 +33,7 @@ export const Hero = () => {
           className="md:text-2xl text-lg text-gray-300 lg:w-10/12"
         >
           {
-            "Based in Bangladesh, I'm a web developer passionate about building modern web applications with modest technologies."
+            "I'm a Full-Stack engineer, passionate about building modern web applications with the lates & modest tech."
           }
         </motion.p>
         <motion.div

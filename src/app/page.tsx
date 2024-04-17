@@ -3,6 +3,7 @@
 // export const dynamic = "force-static";
 
 import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 import { Hero } from "@/components/hero";
 import Navbar from "@/components/navbar";
 import Skills from "@/components/skills";
@@ -20,6 +21,7 @@ export default function Home() {
       </div>
       <div className="w-full flex flex-col items-center gap-y-10 bg-black xl:px-[16%] md:[12%] sm:px-[10%] px-4 pb-8">
         <Contact />
+        <Footer />
       </div>
     </div>
   );
