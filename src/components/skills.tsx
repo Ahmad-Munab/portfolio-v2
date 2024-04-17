@@ -15,7 +15,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import Title from "./ui/title";
-import { AnimatedCards } from "./ui/animated-card";
+import { SkillsCards } from "./ui/skills-cards";
 
 const skills = [
   {
@@ -72,7 +72,7 @@ export default function Skills() {
   return (
     <div className="w-full flex flex-col md:py-24 py-16">
       <Title text="Skills ⚡" />
-      <AnimatedCards items={skills} />
+      <SkillsCards items={skills} />
     </div>
   );
 }
