@@ -41,7 +41,7 @@ export const SkillsCards = ({
       {items.map((item, idx) => (
         <motion.div
           key={idx}
-          className="relative group block p-1 h-full w-full"
+          className="relative group block p-3 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
           variants={fadeInAnimationVariants}
@@ -69,7 +69,7 @@ export const SkillsCards = ({
               />
             )}
           </AnimatePresence>
-          <div className="rounded-md w-full p-4 overflow-hidden bg-black group-hover:ring-2 ring-green-500 relative z-20 transition-all duration-500">
+          <div className="rounded-md w-full p-2 overflow-hidden bg-black group-hover:ring-2 ring-green-500 relative z-20 transition-all duration-500">
             <div className="py-10 z-50 relative space-y-5">
               <item.icon className="mx-auto size-8 text-white" />
               <p className="text-2xl font-semibold text-center text-gray-300">

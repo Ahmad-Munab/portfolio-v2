@@ -24,7 +24,7 @@ const Projects = () => {
     },
     {
       title: "Munab AI",
-      url: "https://munabai.vercel.app",
+      url: "https://munab-ai.vercel.app",
       image: "/project-images/munab-ai.png",
       tech: [SiNextdotjs, SiTailwindcss, SiOpenai],
     },
@@ -36,7 +36,7 @@ const Projects = () => {
     },
     {
       title: "Munab Portfolio-v1",
-      url: "https://nano-link.vercel.app",
+      url: "https://munab-v1.vercel.app",
       image: "/project-images/portfolio-v1.png",
       tech: [SiNextdotjs, SiTailwindcss, SiFramer],
     },
