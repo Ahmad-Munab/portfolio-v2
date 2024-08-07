@@ -23,17 +23,18 @@ const Projects = () => {
       tech: [SiNextdotjs, SiTailwindcss, SiPostgresql],
     },
     {
+      title: "E-Book Archive",
+      url: "https://ebook-archive.vercel.app",
+      image: "/project-images/ebook-archive.png",
+      tech: [SiNextdotjs, SiTailwindcss, SiFramer],
+    },
+    {
       title: "Munab AI",
       url: "https://munab-ai.vercel.app",
       image: "/project-images/munab-ai.png",
       tech: [SiNextdotjs, SiTailwindcss, SiOpenai],
     },
-    {
-      title: "Musesoft",
-      url: "https://muse-jsiqbal.vercel.app",
-      image: "/project-images/musesoft.png",
-      tech: [SiNextdotjs, SiTailwindcss, SiMysql, SiDocker, SiGo],
-    },
+
     {
       title: "Munab Portfolio-v1",
       url: "https://munab-v1.vercel.app",
@@ -46,11 +47,12 @@ const Projects = () => {
       image: "/project-images/portfolio-v2.png",
       tech: [SiNextdotjs, SiTailwindcss, SiFramer],
     },
+
     {
-      title: "ParcelJS",
-      url: "https://parcel-js-v0.vercel.app",
-      image: "/project-images/parcel-js.png",
-      tech: [SiNextdotjs, SiTailwindcss, SiNodedotjs, SiDocker, SiExpress],
+      title: "Musesoft",
+      url: "https://muse-jsiqbal.vercel.app",
+      image: "/project-images/musesoft.png",
+      tech: [SiNextdotjs, SiTailwindcss, SiMysql, SiDocker, SiGo],
     },
   ];
 

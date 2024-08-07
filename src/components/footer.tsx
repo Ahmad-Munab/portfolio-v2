@@ -19,7 +19,7 @@ const Footer = () => {
             Ahmad Munab
           </Link>
 
-          <span className="px-2">© 2024-2036 All Rights Reserved.</span>
+          <span className="px-2">© 2024 All Rights Reserved.</span>
         </div>
         <Socials />
         <div className="flex flex-col justify-center items-start gap-4 text-white">
